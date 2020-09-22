@@ -139,9 +139,9 @@ class MahjongTileTag < Liquid::Tag
       when '7'
         return '🀄'
       when '8'
-        return '🀥'
+        return ' '
       when '9'
-        return '🀪'
+        return '🀥'
       else
         return '🀫'
       end
