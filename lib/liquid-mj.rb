@@ -44,12 +44,12 @@ class MahjongTileTag < Liquid::Tag
 
   def get_unicode(set, number, extension)
     if extension == 'e'
-      return "<span style=\"display:inline-block;transform: rotate(-90deg);transform-origin:55% 57%;margin-left:.15em;margin-right:.08em;\">" + get_unicode(set, number, '') + "</span>"
+      return "<span style=\"display:inline-block;transform: rotate(-90deg) translateX(-0.15em); transform-origin:50% 50%;margin-left:.15em;margin-right:.08em;\">" + get_unicode(set, number, '') + "</span>"
     elsif extension == 'k'
       if number == 0 and set != 'z'
-        return "<span style=\"display:inline-block;transform: rotate(-90deg);transform-origin:48.5% 19.5%;margin-left:-0.76em;margin-right:-.1em\">" + get_unicode(set, number, '') + get_unicode(set, '5', '') + "</span>"
+        return "<span style=\"display:inline-block;transform: rotate(-90deg) translateX(0.4em) translateY(0.333em);transform-origin:50% 50%;margin-left:-0.76em;margin-right:-.1em\">" + get_unicode(set, number, '') + get_unicode(set, '5', '') + "</span>"
       else
-        return "<span style=\"display:inline-block;transform: rotate(-90deg);transform-origin:48.5% 19.5%;margin-left:-0.76em;margin-right:-.1em\">" + get_unicode(set, number, '') + get_unicode(set, number, '') + "</span>"
+        return "<span style=\"display:inline-block;transform: rotate(-90deg) translateX(0.4em) translateY(0.333em);transform-origin:50% 50%;margin-left:-0.76em;margin-right:-.1em\">" + get_unicode(set, number, '') + get_unicode(set, number, '') + "</span>"
       end
     end
     case set
